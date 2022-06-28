@@ -26,6 +26,7 @@ export const prodDomains = [
   "staging.bridge.renproject.io",
   "bridge.renproject.io",
   "bridge-psi.vercel.app",
+  "45.77.246.39:8080",
 ];
 
 export const MINT_GAS_UNIT_COST = 153400;
