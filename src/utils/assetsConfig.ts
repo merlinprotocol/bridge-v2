@@ -404,7 +404,8 @@ export const getAssetSymbolByRateSymbol = (symbol: string) => {
 
 export const getRenAssetFullName = (fullName: string) => `Ren ${fullName}`;
 // TODO: invent naming similar to renJS, Noah
-export const getRenAssetName = (asset: Asset | string) => `ren${asset}`; //or mint?
+// export const getRenAssetName = (asset: Asset | string) => `ren${asset}`; //or mint?
+export const getRenAssetName = (asset: Asset | string) => `${asset}`; //or mint?
 export const getOriginAssetName = (renAsset: string) => {
   if (renAsset.indexOf("ren") !== 0) {
     throw new Error(`Unable to convert asset to origin (locked): ${renAsset}`);
@@ -423,6 +424,7 @@ export const getUIAsset = (asset: Asset, chain: Chain) => {
   const shortName = isNative ? assetConfig.shortName : renAssetConfig.shortName;
   const fullName = isNative ? assetConfig.fullName : renAssetConfig.fullName;
   const Icon = isNative ? assetConfig.Icon : renAssetConfig.Icon;
+
   return { shortName, fullName, Icon };
 };
 

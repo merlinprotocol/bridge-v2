@@ -109,3 +109,7 @@ iframe {
 #renbridge-black {
   fill: #fff;
 }
+
+.MuiSvgIcon-root.MuiSelect-icon.MuiSelect-iconOutlined {
+  display: none;
+}

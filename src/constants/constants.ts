@@ -1,4 +1,4 @@
-export const appName = "RenBridge V3";
+export const appName = "Merlin Protocol";
 
 export enum storageKeys {
   TERMS_AGREED = "termsAgreed",

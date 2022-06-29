@@ -185,6 +185,7 @@ export const RichDropdown: FunctionComponent<RichDropdownProps> = ({
         }}
         value={value}
         {...rest}
+        open={false} // 禁用下拉选择
       >
         {showNone && (
           <MenuItem

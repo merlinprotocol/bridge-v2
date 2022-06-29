@@ -86,7 +86,7 @@ const GatewayLifecycleGuard: FunctionComponent = ({ children }) => {
 };
 
 export const GatewayRoutes: FunctionComponent = () => {
-  usePageTitle("Gateway");
+  usePageTitle("Bridge");
 
   return (
     <GatewayLifecycleGuard>
